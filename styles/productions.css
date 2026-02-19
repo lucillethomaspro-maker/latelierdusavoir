@@ -1,0 +1,51 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+  height: calc(100vh - 70px);
+
+  background: url("../public/productions.webp") center right / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 8%;
+  color: #ffffff;
+}
+
+/* ============================= */
+/* CONTENT */
+/* ============================= */
+
+.hero-content {
+  max-width: 650px;
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 450;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+/* ============================= */
+/* SUBTITLE */
+/* ============================= */
+
+.hero-subtitle {
+  font-size: 26px;
+  font-weight: 90;
+  line-height: 1.7;
+  margin-bottom: 55px;
+  opacity: 0.8;
+}
