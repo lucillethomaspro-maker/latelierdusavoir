@@ -1,0 +1,64 @@
+.nav-to-delete {
+  height: 70px;
+}
+
+.banner {
+  display: grid;
+  grid-template-areas: "stack";
+  align-items: center;
+  height: calc(100vh - 70px);
+  overflow-y: hidden;
+}
+
+.banner picture,
+.banner hgroup {
+  grid-area: stack;
+}
+
+picture::before {
+  content: "";
+  position: absolute;
+  height: calc(100vh - 70px);
+  width: 100vw;
+  top: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner picture img {
+  height: calc(100vh - 70px);
+  width: 100vw;
+  object-fit: cover;
+}
+
+.banner hgroup {
+  display: grid;
+  gap: 16px;
+  font-size: 24px;
+  padding-left: 64px;
+  color: white;
+  z-index: 1;
+}
+
+/* Method */
+
+.method {
+  --translate-y: 0;
+  --opacity-in: 1;
+
+  display: grid;
+  column-gap: 36px;
+  opacity: 0;
+  padding: 24px 10%;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  transform: translateY(100px);
+}
+
+.method hgroup {
+  display: grid;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  gap: 8px;
+  border-radius: 8px;
+  line-height: 1.4;
+}

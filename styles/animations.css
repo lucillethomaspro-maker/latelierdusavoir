@@ -1,0 +1,10 @@
+.visible {
+  animation: fade-in 800ms ease forwards;
+}
+
+@keyframes fade-in {
+  to {
+    transform: translateY(var(--translate-y));
+    opacity: var(--opacity-in);
+  }
+}

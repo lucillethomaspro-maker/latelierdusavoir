@@ -1,55 +1,5 @@
-/* Reset léger */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Raleway', sans-serif;
-}
-
-/* HEADER */
-.site-header {
-  background-color: #ffffff; /* blanc */
-  height: 70px;
-  display: flex;
-  align-items: center;
-}
-
-/* Conteneur centré */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* LOGO */
-.logo img {
-  height: 60px;
-}
-
-/* NAVIGATION */
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.main-nav a:hover {
-  color: #d4a017; /* doré */
+  font-family: "Raleway", sans-serif;
 }
 
 /* ============================= */
@@ -95,7 +45,7 @@ body {
 
 .hero-subtitle {
   font-size: 26px;
-  font-weight: 90;        
+  font-weight: 90;
   line-height: 1.7;
   margin-bottom: 55px;
   opacity: 0.8;
@@ -125,7 +75,7 @@ body {
 
 .hero-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
   background: #ffffff;
 }
 
@@ -200,7 +150,7 @@ body {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
 /* ============================= */
@@ -261,7 +211,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.3));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.3));
 }
 
 /* Texte */
@@ -295,7 +245,7 @@ body {
 }
 
 .why-card:hover {
-  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
 /* ============================= */
@@ -407,7 +357,7 @@ body {
   outline: none;
 
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .footer-form input::placeholder {
@@ -456,7 +406,7 @@ body {
 }
 
 .footer-nav a {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
