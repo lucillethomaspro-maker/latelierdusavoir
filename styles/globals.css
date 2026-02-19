@@ -1,9 +1,20 @@
+@font-face {
+  font-family: "Raleway Thin";
+  src: url("../public/fonts/raleway.thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../public/fonts/raleway.regular.woff2") format("woff2");
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: "Raleway Regular";
 }
 
 h1,

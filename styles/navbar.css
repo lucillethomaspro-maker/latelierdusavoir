@@ -1,20 +1,15 @@
-/* Conteneur centré */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
+  padding: 4px 10vw;
 }
 
-/* LOGO */
-.logo img {
-  height: 60px;
+.main-nav img {
+  height: 100%;
 }
 
-/* NAVIGATION */
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -30,5 +25,5 @@
 }
 
 .main-nav a:hover {
-  color: #d4a017; /* doré */
+  color: #d4a017;
 }
