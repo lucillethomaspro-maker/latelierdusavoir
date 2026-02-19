@@ -1,0 +1,103 @@
+/* ============================= */
+/* ========= CONTACT =========== */
+/* ============================= */
+
+.contact {
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* ===== TITRE ===== */
+
+.contact-title {
+  font-size: 34px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: #888;
+  margin-bottom: 60px;
+}
+
+/* ===== FORM ===== */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ===== INPUT & TEXTAREA ===== */
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 20px 25px;
+  border-radius: 8px;
+  border: 1px solid #222;
+  background: #111;
+  color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+/* Placeholder */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #666;
+  font-weight: 300;
+}
+
+/* Focus premium */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #EFBE28;
+  box-shadow: 0 0 0 3px rgba(239,190,40,0.15);
+}
+
+/* ===== BUTTON ===== */
+
+.contact-form button {
+  margin-top: 20px;
+  align-self: center;
+
+  background: #EFBE28;
+  color: #000;
+
+  padding: 16px 50px;
+  border-radius: 6px;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover premium */
+
+.contact-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(239,190,40,0.25);
+}

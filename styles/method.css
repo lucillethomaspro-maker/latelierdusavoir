@@ -1,43 +1,51 @@
-.nav-to-delete {
-  height: 70px;
-}
+/* ============================= */
+/* HERO */
+/* ============================= */
 
-.banner {
-  display: grid;
-  grid-template-areas: "stack";
+.hero {
+  height: calc(100vh - 70px);
+
+  background: url("../public/equipe.webp") center right / cover no-repeat;
+
+  display: flex;
   align-items: center;
-  height: calc(100vh - 70px);
-  overflow-y: hidden;
+
+  padding-left: 8%;
+  color: #ffffff;
 }
 
-.banner picture,
-.banner hgroup {
-  grid-area: stack;
+/* ============================= */
+/* CONTENT */
+/* ============================= */
+
+.hero-content {
+  max-width: 650px;
 }
 
-picture::before {
-  content: "";
-  position: absolute;
-  height: calc(100vh - 70px);
-  width: 100vw;
-  top: 70px;
-  background-color: rgba(0, 0, 0, 0.5);
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 450;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
 }
 
-.banner picture img {
-  height: calc(100vh - 70px);
-  width: 100vw;
-  object-fit: cover;
+/* ============================= */
+/* SUBTITLE */
+/* ============================= */
+
+.hero-subtitle {
+  font-size: 26px;
+  font-weight: 90;
+  line-height: 1.7;
+  margin-bottom: 55px;
+  opacity: 0.8;
 }
 
-.banner hgroup {
-  display: grid;
-  gap: 16px;
-  font-size: 24px;
-  padding-left: 64px;
-  color: white;
-  z-index: 1;
-}
 
 /* Method */
 
