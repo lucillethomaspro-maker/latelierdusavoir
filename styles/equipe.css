@@ -69,11 +69,13 @@
 }
 
 /* TEAM */
+
 .founders-team {
   display: flex;
   justify-content: center;
   gap: 120px;
   margin-bottom: 80px;
+  flex-wrap: wrap;
 }
 
 .founder {
@@ -138,6 +140,78 @@
   position: relative;
   z-index: 2;
 }
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+  .founders-team {
+    gap: 60px;
+  }
+
+  .founder-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .founders-title {
+    font-size: 30px;
+  }
+
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .founders {
+    padding: 80px 0;
+  }
+
+  .founders-title {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  .founders-team {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+
+  .founder-photo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .founder h3 {
+    font-size: 18px;
+  }
+
+  .founders-text {
+    padding: 0 10px;
+  }
+
+  .founders-text p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* Ajustement du gros guillemet */
+
+  .big-quote {
+    font-size: 120px;
+    top: -30px;
+    left: 0;
+  }
+
+}
+
 /* ============================= */
 /* ========= TEAM ============== */
 /* ============================= */
