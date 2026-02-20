@@ -1,0 +1,311 @@
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+  height: calc(100vh - 70px);
+
+  background: url("../public/equipe.webp") center right / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 8%;
+  color: #ffffff;
+}
+
+/* ============================= */
+/* CONTENT */
+/* ============================= */
+
+.hero-content {
+  max-width: 650px;
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 450;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+/* ============================= */
+/* SUBTITLE */
+/* ============================= */
+
+.hero-subtitle {
+  font-size: 26px;
+  font-weight: 90;
+  line-height: 1.7;
+  margin-bottom: 55px;
+  opacity: 0.8;
+}
+
+/* SECTION */
+.founders {
+  padding: 120px 0;
+  background: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TITRE */
+.founders-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+/* TEAM */
+
+.founders-team {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.founder {
+  text-align: center;
+}
+
+/* PHOTO */
+.founder-photo {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.6s ease;
+}
+
+.founder-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Animation premium hover */
+.founder:hover .founder-photo img {
+  transform: scale(1.08);
+}
+
+.founder h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* TEXTE */
+.founders-text {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.founders-text p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* GROS GUILLEMET */
+.big-quote {
+  position: absolute;
+  top: -60px;
+  left: -40px;
+  font-size: 180px;
+  color: rgba(0, 0, 0, 0.05);
+  font-family: serif;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.founders-text p {
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+  .founders-team {
+    gap: 60px;
+  }
+
+  .founder-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .founders-title {
+    font-size: 30px;
+  }
+
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .founders {
+    padding: 80px 0;
+  }
+
+  .founders-title {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  .founders-team {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+
+  .founder-photo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .founder h3 {
+    font-size: 18px;
+  }
+
+  .founders-text {
+    padding: 0 10px;
+  }
+
+  .founders-text p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* Ajustement du gros guillemet */
+
+  .big-quote {
+    font-size: 120px;
+    top: -30px;
+    left: 0;
+  }
+
+}
+
+/* ============================= */
+/* ========= TEAM ============== */
+/* ============================= */
+
+.team {
+  padding: 20px 0;
+  background: #f5f5f5;
+}
+
+.team .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== TITRE ===== */
+
+.team-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 100px;
+  letter-spacing: -0.5px;
+}
+
+/* ===== GRID ===== */
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+
+/* ===== CARD ===== */
+
+.team-card {
+  text-align: center;
+  max-width: 260px;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== PHOTO AVEC CERCLE OR ===== */
+
+.team-photo {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 30px;
+
+  /* Cercle doré */
+  border: 6px solid #efbe28;
+
+  /* effet premium léger */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* IMPORTANT pour images rectangle */
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+/* Hover premium */
+
+.team-card:hover .team-photo {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.team-card:hover .team-photo img {
+  transform: scale(1.05);
+}
+
+/* ===== NOM ===== */
+
+.team-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ===== ROLE ===== */
+
+.team-card p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #555;
+}
