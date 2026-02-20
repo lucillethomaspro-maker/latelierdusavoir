@@ -8,3 +8,12 @@
     opacity: var(--opacity-in);
   }
 }
+
+@keyframes scrollFollow {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 750px;
+  }
+}

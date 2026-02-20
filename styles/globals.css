@@ -8,6 +8,11 @@
   src: url("../public/fonts/raleway.regular.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Raleway Semi-Bold";
+  src: url("../public/fonts/raleway.semibold.woff2") format("woff2");
+}
+
 * {
   box-sizing: border-box;
 }
