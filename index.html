@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L'atelier du savoir</title>
-    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
-    <link href="/styles/globals.css" rel="stylesheet" >
-    <link href="/styles/home.css" rel="stylesheet" >
-    <link href="/styles/navbar.css" rel="stylesheet" >
-    <link href="/styles/footer.css" rel="stylesheet" >
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+    <link href="/styles/globals.css" rel="stylesheet" />
+    <link href="/styles/home.css" rel="stylesheet" />
+    <link href="/styles/navbar.css" rel="stylesheet" />
+    <link href="/styles/footer.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="main-nav">
@@ -19,208 +19,270 @@
         <li><a href="/pages/method.html">Notre méthode</a></li>
         <li><a href="/pages/productions.html">Nos productions</a></li>
         <li><a href="/pages/equipe.html">Notre équipe</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
       </ul>
+
+      <button
+        class="burger-btn"
+        id="burger"
+        aria-label="Menu"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path class="line line-top" d="M 6 14 L 42 14" />
+          <path class="line line-mid" d="M 6 24 L 42 24" />
+          <path class="line line-bot" d="M 6 34 L 42 34" />
+        </svg>
+      </button>
     </nav>
 
     <section class="hero">
       <div class="hero-content">
-
         <h1 class="hero-title">
-          Concevons ensemble<br>
+          Concevons ensemble<br />
           vos formations à distance
         </h1>
 
         <p class="hero-subtitle">
-          Vous apportez le savoir,<br>
+          Vous apportez le savoir,<br />
           nous le digitalisons.
         </p>
 
         <a href="/pages/method.html" class="hero-btn">
           Découvrez notre méthode
         </a>
-
       </div>
     </section>
-<section class="services">
-  <div class="services-wrapper">
+    <section class="services">
+      <div class="services-wrapper">
+        <div class="services-header">
+          <h2>
+            Une gestion globale de vos projets e-learning / MOOC / blended
+            learning
+          </h2>
 
-  <div class="services-header">
-    <h2>
-      Une gestion globale de vos projets e-learning / MOOC / blended learning
-    </h2>
+          <p>
+            Que vous souhaitiez digitaliser une formation actuellement en
+            présentiel ou créer un projet à partir de zéro, nous vous
+            accompagnons de la phase de réflexion initiale jusqu'au déploiement
+            à grande échelle de votre formation à distance.
+          </p>
+        </div>
 
-    <p>
-      Que vous souhaitiez digitaliser une formation actuellement en présentiel
-      ou créer un projet à partir de zéro, nous vous accompagnons de la phase
-      de réflexion initiale jusqu'au déploiement à grande échelle de votre formation à distance.
-    </p>
-  </div>
+        <div class="services-grid">
+          <!-- Card -->
+          <div class="card">
+            <img src="public/services/Cadrage.webp" alt="" />
+            <h3>Cadrage de projet</h3>
+            <p>
+              Nous vous aidons à affiner votre projet de formation :
+              s'agira-t-il d'un MOOC ? D'un e-learning ? D'une formation hybride
+              présentiel-distanciel ? Les apprenants ont-ils un niveau de
+              connaissances initial homogène ?
+            </p>
+          </div>
 
-  <div class="services-grid">
+          <div class="card">
+            <img src="public/services/Modalites.webp" alt="" />
+            <h3>Définition des modalités de prescription</h3>
+            <p>
+              Votre formation sera-t-elle obligatoire ou en accès libre ?
+              S'adressera-t-elle à tous les salariés ou seulement certains
+              métiers ? Sera-t-elle ouverte toute l'année ou seulement lors de
+              sessions ponctuelles ?
+            </p>
+          </div>
 
-      <!-- Card -->
-      <div class="card">
-        <img src="public/services/Cadrage.webp" alt="">
-        <h3>Cadrage de projet</h3>
-        <p>Nous vous aidons à affiner votre projet de formation : s'agira-t-il d'un MOOC ? D'un e-learning ? D'une formation hybride présentiel-distanciel ? Les apprenants ont-ils un niveau de connaissances initial homogène ?</p>
+          <div class="card">
+            <img src="public/services/Architecture.webp" alt="" />
+            <h3>Conception de l’architecture de la formation</h3>
+            <p>
+              Quelles sont les grandes briques de votre formation ? Sont-elles
+              indépendantes ou nécessitent-elles une progression linéaire ?
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="public/services/Storyboard.webp" alt="" />
+            <h3>Ecriture des scripts et storyboard</h3>
+            <p>
+              Nous concevons les scripts et storyboard de la formation, en
+              collaboration avec votre référent/expert.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="public/services/videos.webp" alt="" />
+            <h3>Conception de vidéos</h3>
+            <p>
+              A la suite de l'écriture des scripts, nous concevons des vidéos
+              d'animation. Ce support sert à présenter le contenu le plus
+              important de votre formation, afin de maximiser l'attention de vos
+              apprenants.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="public/services/autresmedias.webp" alt="" />
+            <h3>Création des autres médias</h3>
+            <p>
+              Pour rendre votre formation dynamique et attrayante, il est
+              nécessaire de varier les formats de contenus. Selon les besoins,
+              nous concevons fiches résumés, infographies, glossaires, documents
+              complémentaires...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="public/services/quiz.webp" alt="" />
+            <h3>Création des quiz et exercices</h3>
+            <p>
+              Nous concevons des quiz pour favoriser l'acquisition des
+              connaissances théoriques et des exercices cas pratiques pour
+              faciliter la mise en oeuvre des compétences par l'apprenant en
+              situation de travail.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="public/services/capsules.webp" alt="" />
+            <h3>Conception de capsules interactives / SCORM</h3>
+            <p>
+              Si vous le souhaitez, nous pouvons intégrer tout ou partie du
+              contenu de votre formation dans une ou des capsules interactives
+              SCORM.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="public/services/integrationLMS.webp" alt="" />
+            <h3>Intégration du parcours sur le LMS</h3>
+            <p>
+              Nous intégrons les modules de la formation sur votre LMS et nous
+              configurons le parcours. Nous pouvons ajouter à cette étape des
+              modalités de certification.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="public/services/traduction.webp" alt="" />
+            <h3>Traduction du elearning</h3>
+            <p>
+              Nous travaillons avec une agence pour traduire les contenus de
+              votre formation. Nous ré-enregistrons les voix off avec des
+              acteurs (et non des voix artificielles). Nous pouvons travailler
+              dans toutes les langues !
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="public/services/accessibilite.webp" alt="" />
+            <h3>Accessibilité et sous-titrage</h3>
+            <p>
+              Nous veillons à rendre nos formations accessibles à tous. Tous nos
+              modules vidéo intègrent des sous-titres afin de faciliter la
+              compréhension et l’inclusion de chaque apprenant.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="public/services/changement.webp" alt="" />
+            <h3>Conduite du changement / animation de MOOC</h3>
+            <p>
+              Nous vous aidons à mobiliser vos équipes autour de la formation et
+              à ancrer les nouvelles pratiques dans la durée. Nous animons vos
+              MOOC pour accompagner efficacement la conduite du changement.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="public/services/Modalites.webp" alt="">
-        <h3>Définition des modalités de prescription</h3>
-        <p>Votre formation sera-t-elle obligatoire ou en accès libre ? S'adressera-t-elle à tous les salariés ou seulement certains métiers ? Sera-t-elle ouverte toute l'année ou seulement lors de sessions ponctuelles ?</p>
+    <section class="why-us">
+      <h2 class="why-title">Pourquoi faire appel à nous ?</h2>
+
+      <div class="why-grid">
+        <!-- Card 1 -->
+        <a href="/pages/method.html" class="why-card">
+          <img src="public/methode.webp" alt="" />
+          <div class="why-content">
+            <h3>Notre méthode</h3>
+            <p>
+              Une méthodologie de projet efficiente alliant qualité et délais
+              courts
+            </p>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="/pages/productions.html" class="why-card">
+          <img src="public/productions.webp" alt="" />
+          <div class="why-content">
+            <h3>Notre expertise</h3>
+            <p>Une expérience variée auprès de grandes entreprises</p>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="/pages/equipe.html" class="why-card">
+          <img src="public/equipe.webp" alt="" />
+          <div class="why-content">
+            <h3>Notre équipe</h3>
+            <p>Des compétences transverses pour vous accompagner</p>
+          </div>
+        </a>
       </div>
-
-      <div class="card">
-        <img src="public/services/Architecture.webp" alt="">
-        <h3>Conception de l’architecture de la formation</h3>
-        <p>Quelles sont les grandes briques de votre formation ? Sont-elles indépendantes ou nécessitent-elles une progression linéaire ?</p>
-      </div>
-
-      <div class="card">
-        <img src="public/services/Storyboard.webp" alt="">
-        <h3>Ecriture des scripts et storyboard</h3>
-        <p>Nous concevons les scripts et storyboard de la formation, en collaboration avec votre référent/expert.</p>
-      </div>
-
-      <div class="card">
-        <img src="public/services/videos.webp" alt="">
-        <h3>Conception de vidéos</h3>
-        <p>A la suite de l'écriture des scripts, nous concevons des vidéos d'animation. Ce support sert à présenter le contenu le plus important de votre formation, afin de maximiser l'attention de vos apprenants.</p>
-      </div>
-
-      <div class="card">
-        <img src="public/services/autresmedias.webp" alt="">
-        <h3>Création des autres médias</h3>
-        <p>Pour rendre votre formation dynamique et attrayante, il est nécessaire de varier les formats de contenus. Selon les besoins, nous concevons fiches résumés, infographies, glossaires, documents complémentaires...</p>
-      </div>
-
-      <div class="card">
-        <img src="public/services/quiz.webp" alt="">
-        <h3>Création des quiz et exercices</h3>
-        <p>Nous concevons des quiz pour favoriser l'acquisition des connaissances théoriques et des exercices cas pratiques pour faciliter la mise en oeuvre des compétences par l'apprenant en situation de travail.</p>
-      </div>
-
-      <div class="card">
-        <img src="public/services/capsules.webp" alt="">
-        <h3>Conception de capsules interactives / SCORM</h3>
-        <p>Si vous le souhaitez, nous pouvons intégrer tout ou partie du contenu de votre formation dans une ou des capsules interactives SCORM.</p>
-      </div>
-
-      <div class="card">
-        <img src="public/services/integrationLMS.webp" alt="">
-        <h3>Intégration du parcours sur le LMS</h3>
-        <p>Nous intégrons les modules de la formation sur votre LMS et nous configurons le parcours. Nous pouvons ajouter à cette étape des modalités de certification.</p>
-      </div>
-
-      <div class="card">
-        <img src="public/services/traduction.webp" alt="">
-        <h3>Traduction du elearning</h3>
-        <p>Nous travaillons avec une agence pour traduire les contenus de votre formation. Nous ré-enregistrons les voix off avec des acteurs (et non des voix artificielles). Nous pouvons travailler dans toutes les langues !</p>
-      </div>
-
-      <div class="card">
-        <img src="public/services/accessibilite.webp" alt="">
-        <h3>Accessibilité et sous-titrage</h3>
-        <p>Nous veillons à rendre nos formations accessibles à tous. Tous nos modules vidéo intègrent des sous-titres afin de faciliter la compréhension et l’inclusion de chaque apprenant.</p>
-      </div>
-
-      <div class="card">
-        <img src="public/services/changement.webp" alt="">
-        <h3>Conduite du changement / animation de MOOC</h3>
-        <p>Nous vous aidons à mobiliser vos équipes autour de la formation et à ancrer les nouvelles pratiques dans la durée. Nous animons vos MOOC pour accompagner efficacement la conduite du changement.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="why-us">
-
-  <h2 class="why-title">
-    Pourquoi faire appel à nous ?
-  </h2>
-
-  <div class="why-grid">
-
-    <!-- Card 1 -->
-    <a href="/pages/method.html" class="why-card">
-      <img src="public/methode.webp" alt="">
-      <div class="why-content">
-        <h3>Notre méthode</h3>
-        <p>Une méthodologie de projet efficiente alliant qualité et délais courts</p>
-      </div>
-    </a>
-
-    <!-- Card 2 -->
-    <a href="/pages/productions.html" class="why-card">
-      <img src="public/productions.webp" alt="">
-      <div class="why-content">
-        <h3>Notre expertise</h3>
-        <p>Une expérience variée auprès de grandes entreprises</p>
-      </div>
-    </a>
-
-    <!-- Card 3 -->
-    <a href="/pages/equipe.html" class="why-card">
-      <img src="public/equipe.webp" alt="">
-      <div class="why-content">
-        <h3>Notre équipe</h3>
-        <p>Des compétences transverses pour vous accompagner</p>
-      </div>
-    </a>
-
-  </div>
-
-</section>
+    </section>
 
     <section class="clients">
-      <h2 class="clients-title">
-        Ils nous ont fait confiance...
-      </h2>
+      <h2 class="clients-title">Ils nous ont fait confiance...</h2>
       <div class="clients-logos">
         <picture>
-        <!-- Tablette / Mobile -->
-        <source 
-         srcset="public/logos-clients-5lignes.webp" 
-         media="(max-width: 1024px)"
-    >
-    
-        <!-- Desktop -->
-        <img src="public/logos-clients.webp" alt="Nos clients">
+          <!-- Tablette / Mobile -->
+          <source
+            srcset="public/logos-clients-5lignes.webp"
+            media="(max-width: 1024px)"
+          />
+
+          <!-- Desktop -->
+          <img src="public/logos-clients.webp" alt="Nos clients" />
         </picture>
       </div>
-
-      
     </section>
 
-<footer class="footer">
+    <footer class="footer">
+      <div class="footer-cta">
+        <h2>Vous souhaitez être contacté par notre équipe ?</h2>
+        <p>Un projet, un devis, une question, une demande particulière…</p>
 
-  <div class="footer-cta">
-    <h2>Vous souhaitez être contacté par notre équipe ?</h2>
-    <p>Un projet, un devis, une question, une demande particulière…</p>
+        <form class="footer-form">
+          <input
+            type="email"
+            placeholder="Entrez votre adresse mail…"
+            required
+          />
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
 
-    <form class="footer-form">
-      <input type="email" placeholder="Entrez votre adresse mail…" required>
-      <button type="submit">Envoyer</button>
-    </form>
-  </div>
+      <div class="footer-bottom">
+        <img
+          src="public/LogoBlanc.webp"
+          alt="L'Atelier du Savoir"
+          class="footer-logo"
+        />
 
-  <div class="footer-bottom">
-    <img src="public/LogoBlanc.webp" alt="L'Atelier du Savoir" class="footer-logo">
-
-    <nav class="footer-nav">
-      <a href="/">Accueil</a>
-      <a href="/notre-methode.html">Notre méthode</a>
-      <a href="/nos-productions.html">Nos productions</a>
-      <a href="/notre-equipe.html">Notre équipe</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/mentions-legales.html">Mentions légales</a>
-    </nav>
-  </div>
-
-</footer>
+        <nav class="footer-nav">
+          <a href="/">Accueil</a>
+          <a href="/notre-methode.html">Notre méthode</a>
+          <a href="/nos-productions.html">Nos productions</a>
+          <a href="/notre-equipe.html">Notre équipe</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/mentions-legales.html">Mentions légales</a>
+        </nav>
+      </div>
+    </footer>
     <script src="./scripts/globals.js"></script>
+    <script src="./scripts/burger-menu.js"></script>
   </body>
 </html>

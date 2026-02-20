@@ -26,3 +26,80 @@
 .main-nav a:hover {
   color: #d4a017;
 }
+
+@media (width < 768px) {
+  .main-nav {
+    padding-inline: 16px;
+  }
+
+  .main-nav ul {
+    display: none;
+  }
+
+  .burger-btn {
+    --size: 48px;
+    --stroke: 2.5px;
+    --color: #111;
+    --duration: 0.45s;
+    --ease: cubic-bezier(0.77, 0, 0.18, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size);
+    height: var(--size);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .burger-btn svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .burger-btn .line {
+    stroke: var(--color);
+    stroke-width: var(--stroke);
+    stroke-linecap: round;
+    fill: none;
+    transition:
+      d var(--duration) var(--ease),
+      opacity var(--duration) var(--ease),
+      transform var(--duration) var(--ease);
+    transform-origin: center;
+  }
+
+  .burger-btn.is-open .line-top {
+    d: path("M 6 6 L 42 42");
+  }
+
+  .burger-btn.is-open .line-mid {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .burger-btn.is-open .line-bot {
+    d: path("M 42 6 L 6 42");
+  }
+
+  .main-nav ul {
+    /* état fermé */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition:
+      opacity 0.35s cubic-bezier(0.77, 0, 0.18, 1),
+      transform 0.35s cubic-bezier(0.77, 0, 0.18, 1);
+  }
+
+  .main-nav .burger-btn.is-open ~ ul {
+    /* état ouvert */
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}
