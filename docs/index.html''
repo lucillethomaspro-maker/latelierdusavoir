@@ -28,7 +28,7 @@
       </button>
 
       <ul>
-        <li><a href="/index.html" class="active">Accueil</a></li>
+        <li><a href="/latelierdusavoir/index.html" class="active">Accueil</a></li>
         <li><a href="/latelierdusavoir/pages/method.html">Notre méthode</a></li>
         <li><a href="/latelierdusavoir/pages/productions.html">Nos productions</a></li>
         <li><a href="/latelierdusavoir/pages/equipe.html">Notre équipe</a></li>
@@ -273,7 +273,7 @@
         />
 
         <nav class="footer-nav">
-          <a href="/">Accueil</a>
+          <a href="/latelierdusavoir/">Accueil</a>
           <a href="/notre-methode.html">Notre méthode</a>
           <a href="/nos-productions.html">Nos productions</a>
           <a href="/notre-equipe.html">Notre équipe</a>
