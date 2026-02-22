@@ -26,6 +26,6 @@
   }
 
   100% {
-    transform: translateX(-50%) translateY(calc(var(--main-height) - 104px));
+    transform: translateX(-50%) translateY(calc(var(--main-height) - 250px));
   }
 }
