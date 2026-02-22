@@ -12,12 +12,25 @@
     <nav class="main-nav">
       <img src="../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" />
 
+      <button
+        class="burger-btn"
+        id="burger"
+        aria-label="Menu"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path class="line line-top" d="M 6 14 L 42 14" />
+          <path class="line line-mid" d="M 6 24 L 42 24" />
+          <path class="line line-bot" d="M 6 34 L 42 34" />
+        </svg>
+      </button>
+
       <ul>
-        <li><a href="/index.html">Accueil</a></li>
+        <li><a href="/index.html" class="active">Accueil</a></li>
         <li><a href="/pages/method.html">Notre méthode</a></li>
         <li><a href="/pages/productions.html">Nos productions</a></li>
         <li><a href="/pages/equipe.html">Notre équipe</a></li>
-        <li><a href="/pages/contact.html" class="active">Contact</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -50,5 +63,6 @@
         </form>
       </div>
     </section>
+    <script src="../scripts/burger-menu.js"></script>
   </body>
 </html>
