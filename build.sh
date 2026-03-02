@@ -51,6 +51,18 @@ for folder in "${FOLDERS[@]}"; do
 done
 
 # ──────────────────────────────────────────────
+# COPIE DES FICHIERS SEO
+# ──────────────────────────────────────────────
+for seo_file in "sitemap.xml" "robots.txt"; do
+  if [ -f "$seo_file" ]; then
+    log "Copie de $seo_file..."
+    cp "$seo_file" "$DIST_DIR/$seo_file"
+  else
+    echo "  ⚠️  Fichier '$seo_file' introuvable, ignoré."
+  fi
+done
+
+# ──────────────────────────────────────────────
 # CONCATENATION
 # ──────────────────────────────────────────────
 
